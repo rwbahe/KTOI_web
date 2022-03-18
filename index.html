@@ -11,7 +11,49 @@
         href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script>
+        // dropdown menu logic
+        function showMenu() {
+            let menu = document.getElementById("menu");
+            let dropdown = document.getElementById("dropdown");
+
+            if (dropdown.style.opacity == 0) {
+                dropdown.style.transition = "opacity 1s";
+                dropdown.style.opacity = 1;
+                dropdown.style.zIndex = 1;
+                menu.style.backgroundImage = "url(icons/cancel_36x36.svg)"
+            }
+            else {
+                dropdown.style.opacity = 0;
+                dropdown.style.zIndex = -1;
+                menu.style.backgroundImage = "url(icons/menu_36x36.svg)"
+            }
+        }
+        
+        // greeting change logic
+        function changeToCovenant() {
+            let elemGreeting = document.getElementById("banner-greeting");
+            let elemCovenant = document.getElementById("banner-covenant");
+
+            elemGreeting.style.transition = "opacity 1s";
+            elemGreeting.style.opacity = "0";
+
+            elemCovenant.style.transition = "opacity 1s";
+            elemCovenant.style.opacity = "1";
+        }
+
+        function changeToGreeting() {
+            let elemGreeting = document.getElementById("banner-greeting");
+            let elemCovenant = document.getElementById("banner-covenant");
+
+            elemGreeting.style.transition = "opacity 1s";
+            elemGreeting.style.opacity = "1";
+
+
+            elemCovenant.style.transition = "opacity 1s";
+            elemCovenant.style.opacity = "0";
+        }
+    </script>
     <title>Kootenai Tribe of Idaho</title>
 </head>
 
