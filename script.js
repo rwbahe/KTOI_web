@@ -7,12 +7,12 @@ function showMenu() {
         dropdown.style.transition = "opacity 1s";
         dropdown.style.opacity = 1;
         dropdown.style.zIndex = 1;
-        menu.style.backgroundImage = "url(/icons/cancel_36x36.svg)"
+        menu.style.backgroundImage = "url(icons/cancel_36x36.svg)"
     }
     else {
         dropdown.style.opacity = 0;
         dropdown.style.zIndex = -1;
-        menu.style.backgroundImage = "url(/icons/menu_36x36.svg)"
+        menu.style.backgroundImage = "url(icons/menu_36x36.svg)"
     }
 }
 
