@@ -11,57 +11,15 @@
         href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script>
-        // dropdown menu logic
-        function showMenu() {
-            let menu = document.getElementById("menu");
-            let dropdown = document.getElementById("dropdown");
-
-            if (dropdown.style.opacity == 0) {
-                dropdown.style.transition = "opacity 1s";
-                dropdown.style.opacity = 1;
-                dropdown.style.zIndex = 1;
-                menu.style.backgroundImage = "url(icons/cancel_36x36.svg)"
-            }
-            else {
-                dropdown.style.opacity = 0;
-                dropdown.style.zIndex = -1;
-                menu.style.backgroundImage = "url(icons/menu_36x36.svg)"
-            }
-        }
-        
-        // greeting change logic
-        function changeToCovenant() {
-            let elemGreeting = document.getElementById("banner-greeting");
-            let elemCovenant = document.getElementById("banner-covenant");
-
-            elemGreeting.style.transition = "opacity 1s";
-            elemGreeting.style.opacity = "0";
-
-            elemCovenant.style.transition = "opacity 1s";
-            elemCovenant.style.opacity = "1";
-        }
-
-        function changeToGreeting() {
-            let elemGreeting = document.getElementById("banner-greeting");
-            let elemCovenant = document.getElementById("banner-covenant");
-
-            elemGreeting.style.transition = "opacity 1s";
-            elemGreeting.style.opacity = "1";
-
-
-            elemCovenant.style.transition = "opacity 1s";
-            elemCovenant.style.opacity = "0";
-        }
-    </script>
+    <script src="script.js"></script>
     <title>Kootenai Tribe of Idaho</title>
 </head>
 
 <body>
     <div id="header">
-        <div id="header-content-wrapper">
-            <div id="logo-container">
-                <div id="logo"></div>
+        <div id="header-wrapper">
+            <div id="logo">
+                <img id="photo" src="icons/logo_80x100.png" alt="logo" width="80" height="100">
                 <div id="title">
                     <h1>Kootenai Tribe</h1>
                     <h2>of Idaho</h2>
@@ -74,24 +32,26 @@
                 <a href="fish.html">Fish & Wildlife</a>
                 <a href="enterprise.html">Enterprise</a>
                 <a href="contact.html">Contact</a>
-                <button id="menu" onclick="showMenu()"></button>
+                <button id="menu">
+                    <div id="dropdown">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="gov.html">Government</a>
+                        <a href="fish.html">Fish & Wildlife</a>
+                        <a href="enterprise.html">Enterprise</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </button>
             </div>
         </div>
     </div>
-    <div id="dropdown">
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="gov.html">Government</a>
-        <a href="fish.html">Fish & Wildlife</a>
-        <a href="enterprise.html">Enterprise</a>
-        <a href="contact.html">Contact</a>
-    </div>
+
     <div id="banner">
-        <div id="banner-content-wrapper">
-            <div id="banner-greeting" onmouseover="changeToCovenant()" onmouseout="changeToGreeting()">
-                <h1>Kysuk Kyikyut!</h1>
-                <h2>(Welcome!)</h2>
-            </div>
+        <div id="banner-greeting">
+            <h1>Kysuk Kyikyut!</h1>
+            <h2>(Welcome!)</h2>
+        </div>
+        <!--
             <div id="banner-covenant">
                 <p id="cov-1">
                     "I have created you Kootenai People to look
@@ -106,12 +66,16 @@
                     - the Creator's Covenant
                 </p>
             </div>
-        </div>
+        -->
     </div>
+
     <div id="main">
-        <div id="main-content-wrapper">
+        <div id="main-wrapper">
+
             <div id="intro">
-                <h2>Kootenai Tribe of Idaho</h2>
+                <div class="heading">
+                    <h2>Kootenai Tribe of Idaho</h2>
+                </div>
                 <p>
                     This covenant was made with the Creator by the first Kootenai People of this great area. To this
                     day, we still honor and respect this covenant. The Kootenai People have survived more than a
@@ -125,64 +89,85 @@
                     are provided.
                 </p>
             </div>
+
             <div id="flyer">
-                <h2>Discover</h2>
-                <div id="flyer-container">
-                    <div>
-                        <div>
-                            <div id="pntr"></div>
+                <div class="heading">
+                    <h2>Discover</h2>
+                </div>
+                <div class="container">
+
+                    <div class="item">
+                        <div class="pntr"></div>
+                        <div class="content">
                             <h3>History</h3>
+                            <p>Learn the history of the Kootenai Tribe of Idaho and it's people.</p>
+                            <a href="about.html">Learn More</a>
                         </div>
-                        <p>
-                            Learn the history of the Kootenai Tribe of Idaho and it's people.
-                        </p>
-                        <a href="about.html">Learn More</a>
                     </div>
-                    <div>
-                        <div>
-                            <div id="pntr"></div>
+
+                    <div class="item">
+                        <div class="pntr"></div>
+                        <div class="content">
                             <h3>Government</h3>
+                            <p>Learn about the Tribe's government, including administration and tribal services.</p>
+                            <a href="gov.html">Learn More</a>
                         </div>
-                        <p>
-                            Learn about the Tribe's government, including administration and tribal services.
-                        </p>
-                        <a href="gov.html">Learn More</a>
                     </div>
-                    <div>
-                        <div>
-                            <div id="pntr"></div>
+
+                    <div class="item">
+                        <div class="pntr"></div>
+                        <div class="content">
                             <h3>Associations</h3>
+                            <p>Discover Kootenai Tribe of Idaho Enterprises, including the Kootenai River Inn & Spa.</p>
+                            <a href="enterprise.html">Learn More</a>
                         </div>
-                        <p>
-                            Discover Kootenai Tribe of Idaho Enterprises, including the Kootenai River Inn & Spa.
-                        </p>
-                        <a href="enterprise.html">Learn More</a>
                     </div>
+
                 </div>
             </div>
+
             <div id="current">
-                <h2>Partners and Programs</h2>
-                <div id="current-container">
-                    <div id="col-1">
-                        <h3>Kootenai River Inn & Spa</h3>
-                        <p>
-                            The Kootenai River Inn & Spa celebrated it's opening in 1986. Since then, it's funding has contributed to the Tribal health clinic, college scholarships for Tribal members, funding to local schools, and seed money for other Tribal projects. Learn more about the Kootenai River Inn & Spa and it's history.
-                        </p>
-                        <a href="enterprise.html">Learn More</a>
-                        <h3>Fish & Wildlife Programs</h3>
-                        <p>
-                            The Fish & Wildlife Program includes a comprehensive suite of ecological and biological monitoring and restoration projects designed to protect, restore, and enhance valued habitats and wildlife. Learn more about the various projects.
-                        </p>
-                        <a href="fish.html">Learn More</a>
+
+                <div class="heading">
+                    <h2>Partners and Programs</h2>
+                </div>
+
+                <div class="container">
+                    <div class="item">
+                        <div class="col">
+                            <h3>Kootenai River Inn & Spa</h3>
+                            <p>
+                                The Kootenai River Inn & Spa celebrated it's opening in 1986. Since then, it's funding
+                                has contributed to the Tribal health clinic, college scholarships for Tribal members,
+                                funding to local schools, and seed money for other Tribal projects. Learn more about the
+                                Kootenai River Inn & Spa and it's history.
+                            </p>
+                            <a href="enterprise.html">Learn More</a>
+                        </div>
+                        <img id="photo-1" src="images/photos/40590.jpg" alt="kootenai_river_inn_spa" width="640"
+                            height="480">
                     </div>
-                    <div id="col-2">
-                        <div id="photo-1"></div>
-                        <div id="photo-2"></div>
+
+                    <div class="item">
+                        <div class="col">
+                            <h3>Fish & Wildlife Programs</h3>
+                            <p>
+                                The Fish & Wildlife Program includes a comprehensive suite of ecological and biological
+                                monitoring and restoration projects designed to protect, restore, and enhance valued
+                                habitats and wildlife. Learn more about the various projects.
+                            </p>
+                            <a href="fish.html">Learn More</a>
+                        </div>
+                        <img id="photo-2" src="/images/photos/landscape_1.JPG" alt="wildlife_landscape" width="640"
+                            height="480">
                     </div>
                 </div>
+
             </div>
+
         </div>
     </div>
+
     <div id="footer">
         <div id="footer-content-wrapper">
             <div id="footer-content">
@@ -193,11 +178,11 @@
                 </div>
                 <div id="contact">
                     <p>(208) 267-3519</p>
-                    <p>email address</p>
+                    <p>council@kootenai.org</p>
                 </div>
             </div>
         </div>
     </div>
-</body>
 
+</body>
 </html>

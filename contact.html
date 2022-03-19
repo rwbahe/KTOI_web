@@ -17,9 +17,9 @@
 
 <body>
     <div id="header">
-        <div id="header-content-wrapper">
-            <div id="logo-container">
-                <div id="logo"></div>
+        <div id="header-wrapper">
+            <div id="logo">
+                <img id="photo" src="icons/logo_80x100.png" alt="logo" width="80" height="100">
                 <div id="title">
                     <h1>Kootenai Tribe</h1>
                     <h2>of Idaho</h2>
@@ -32,44 +32,50 @@
                 <a href="fish.html">Fish & Wildlife</a>
                 <a href="enterprise.html">Enterprise</a>
                 <a href="contact.html">Contact</a>
-                <button id="menu" onclick="showMenu()"></button>
+                <button id="menu">
+                    <div id="dropdown">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="gov.html">Government</a>
+                        <a href="fish.html">Fish & Wildlife</a>
+                        <a href="enterprise.html">Enterprise</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </button>
             </div>
         </div>
     </div>
-    <div id="dropdown">
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="gov.html">Government</a>
-        <a href="fish.html">Fish & Wildlife</a>
-        <a href="enterprise.html">Enterprise</a>
-        <a href="contact.html">Contact</a>
-    </div>
-    <div class="banner_sidepage">
-        <div class="banner_sidepage-content-wrapper" id="banner_sidepage-contact">
+
+    <div class="banner-sidepage" id="banner-sidepage_contact">
+        <div class="title-sidepage">
             <h1>Contact</h1>
         </div>
     </div>
+
     <div id="main_contact">
-        <div id="main_contact-content-wrapper">
-            <div id="general-info">
-                <h2>General Contact</h2>
-                <div id="headquarter">
+        <div id="main_contact-wrapper">
+            <div id="general">
+                <div class="heading">
+                    <h2>General Contact</h2>
+                </div>
+
+                <div class="container">
                     <h4>Main Office</h4>
-                    <div id="hours">
-                        <div id="col-1">
+                    <div class="hours">
+                        <div class="col">
                             <p>Hours:</p>
                         </div>
-                        <div id="col-2">
-                            <div id="day">
-                                <p>Monday</p>
-                                <p>Tuesday</p>
-                                <p>Wednesday</p>
-                                <p>Thursday</p>
-                                <p>Friday</p>
-                                <p>Saturday</p>
-                                <p>Sunday</p>
+                        <div class="col">
+                            <div class="day">
+                                <p>Mon</p>
+                                <p>Tues</p>
+                                <p>Wed</p>
+                                <p>Thury</p>
+                                <p>Fri</p>
+                                <p>Sat</p>
+                                <p>Sun</p>
                             </div>
-                            <div id="time">
+                            <div class="time">
                                 <p>8AM-4PM</p>
                                 <p>8AM-4PM</p>
                                 <p>8AM-4PM</p>
@@ -80,18 +86,15 @@
                             </div>
                         </div>
                     </div>
-
-                    <p>
-                        Address: 142 Co Rd 38A, Bonners Ferry, ID 83805
-                    </p>
-
-                    <p>
-                        Phone: (208) 267-3519
-                    </p>
+                    <div>
+                        <p>Address: 142 Co Rd 38A, Bonners Ferry, ID 83805</p>
+                        <p>Phone: (208) 267-3519</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
     <div id="footer">
         <div id="footer-content-wrapper">
             <div id="footer-content">
@@ -102,11 +105,11 @@
                 </div>
                 <div id="contact">
                     <p>(208) 267-3519</p>
-                    <p>email address</p>
+                    <p>council@kootenai.org</p>
                 </div>
             </div>
         </div>
     </div>
-</body>
 
+</body>
 </html>

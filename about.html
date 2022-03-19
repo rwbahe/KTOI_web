@@ -17,9 +17,9 @@
 
 <body>
     <div id="header">
-        <div id="header-content-wrapper">
-            <div id="logo-container">
-                <div id="logo"></div>
+        <div id="header-wrapper">
+            <div id="logo">
+                <img id="photo" src="icons/logo_80x100.png" alt="logo" width="80" height="100">
                 <div id="title">
                     <h1>Kootenai Tribe</h1>
                     <h2>of Idaho</h2>
@@ -32,100 +32,138 @@
                 <a href="fish.html">Fish & Wildlife</a>
                 <a href="enterprise.html">Enterprise</a>
                 <a href="contact.html">Contact</a>
-                <button id="menu" onclick="showMenu()"></button>
+                <button id="menu">
+                    <div id="dropdown">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="gov.html">Government</a>
+                        <a href="fish.html">Fish & Wildlife</a>
+                        <a href="enterprise.html">Enterprise</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </button>
             </div>
         </div>
     </div>
-    <div id="dropdown">
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="gov.html">Government</a>
-        <a href="fish.html">Fish & Wildlife</a>
-        <a href="enterprise.html">Enterprise</a>
-        <a href="contact.html">Contact</a>
-    </div>
-    <div class="banner_sidepage">
-        <div class="banner_sidepage-content-wrapper" id="banner_sidepage-aboutUS">
+
+    <div class="banner-sidepage" id="banner-sidepage_about">
+        <div class="title-sidepage">
             <h1>About Us</h1>
         </div>
     </div>
+
     <div id="main_about">
-        <div id="main_about-content-wrapper">
+        <div id="main_about-wrapper">
+
             <div id="elders">
-                <div id="heading">
+                <div class="heading">
                     <h2>Our Elders</h2>
                 </div>
-                <div id="summary">
-                    <p>
-                        The Kootenai Elders have passed down the history of Creation, much of it uniquely Kootenai and so sacred that it cannot be shared with outsiders. It can be told, however, that the Kootenai People were created by Quilxha Nupika, the supreme being, and placed on earth to keep the Creator Spirit's Covenant. The Covenant states: "I have created you Kootenai People to look after this beautiful land, to honor and guard and celebrate my Creation here in this place. As long as you do that, this land will meet all your needs. Everything necessary for you and your children to live and be happy forever is here, as long as you keep the Covenant with me."
-                    </p>
-                </div>
-                <div id="container">
-                    <div id="louise-abraham">
-                        <div id="photo"></div>
-                        <div id="info">
+                <p>
+                    The Kootenai Elders have passed down the history of Creation, much of it uniquely Kootenai and so
+                    sacred that it cannot be shared with outsiders. It can be told, however, that the Kootenai People
+                    were created by Quilxha Nupika, the supreme being, and placed on earth to keep the Creator Spirit's
+                    Covenant. The Covenant states: "I have created you Kootenai People to look after this beautiful
+                    land, to honor and guard and celebrate my Creation here in this place. As long as you do that, this
+                    land will meet all your needs. Everything necessary for you and your children to live and be happy
+                    forever is here, as long as you keep the Covenant with me."
+                </p>
+                <div class="container">
+                    <div class="item">
+                        <img src="images/photos/elders/louise-abraham.png" alt="elder-louise_abraham" width="160"
+                            height="220">
+                        <div class="info">
                             <h4>Louise Abraham</h4>
                             <h6>(1936 - 2011)</h6>
                         </div>
                     </div>
-                    <div id="mary-david">
-                        <div id="photo"></div>
-                        <div id="info">
+                    <div class="item">
+                        <img src="images/photos/elders/mary-david.png" alt="elder-mary-david" width="160" height="220">
+                        <div class="info">
                             <h4>Mary David</h4>
                             <h6>(1926 - 2006)</h6>
                         </div>
                     </div>
-                    <div id="mathias-david">
-                        <div id="photo"></div>
-                        <div id="info">
+                    <div class="item">
+                        <img src="images/photos/elders/mathias-david.png" alt="elder-mathias-david" width="160"
+                            height="220">
+                        <div class="info">
                             <h4>Mathias David</h4>
                             <h6>(1924 - 2014)</h6>
                         </div>
                     </div>
-                    <div id="amy-trice">
-                        <div id="photo"></div>
-                        <div id="info">
+                    <div class="item">
+                        <img src="images/photos/elders/amy-trice.png" alt="elder-amy-trice" width="160" height="220">
+                        <div class="info">
                             <h4>Amy Trice</h4>
                             <h6>(1925 - 2010)</h6>
                         </div>
                     </div>
-                    <div id="basil-white">
-                        <div id="photo"></div>
-                        <div id="info">
+                    <div class="item">
+                        <img src="images/photos/elders/basil-white.png" alt="elder-basil-white" width="160"
+                            height="220">
+                        <div class="info">
                             <h4>Basil White</h4>
                             <h6>(1926 - 2003)</h6>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div id="history">
-                <div id="heading">
+                <div class="heading">
                     <h2>Our History</h2>
                 </div>
-                <div id="info">
-                    <div id="col-1">
+                <div class="info">
+                    <div>
                         <p>
-                            in 1855, the United States sent representatives to make a treaty with all tribes in the Northwest. Tribal reoresentatives met at Hellgate in Montana but were told that the government wanted to take the aboriginal territory and put the tribe on a reservation. No Kootenai ever signed the treaty. In 1860, the International Boundary Commission came to survey the United States Canadian border. The Bonners Ferry Kootenai took the men and their supplies across the Kootenai River, sharing food and showing them safe trails to follow. In return, as one Kootenai said, "We helped them, and then they drew a line through the middle of our house and said we couldn't cross it." That line is referred to as the U.S. Canadian border.
+                            In 1855, the United States sent representatives to make a treaty with all tribes in the
+                            Northwest. Tribal representatives met at Hellgate in Montana but were told that the
+                            government wanted to take the aboriginal territory and put the tribe on a reservation. No
+                            Kootenai ever signed the treaty. In 1860, the International Boundary Commission came to
+                            survey the United States Canadian border. The Bonners Ferry Kootenai took the men and their
+                            supplies across the Kootenai River, sharing food and showing them safe trails to follow. In
+                            return, as one Kootenai said, "We helped them, and then they drew a line through the middle
+                            of our house and said we couldn't cross it." That line is referred to as the U.S. Canadian
+                            border.
                         </p>
                         <p>
-                            Because of that border and the epidemic which killed so many tribal members, the Kootenai Nation was reduced to seven communities - five in Canada and two in the U.S. No matter how hard they struggled, the Kootenais kept losing their land. From the beginning of time, the Kootenais had respected each other and everything in His creation. Strange diseases came, killing tribal members. First smallpoxm then measles, diptheria, tuberculosis, and alchohol. Then the State of Idaho revoked tribal rights to fish and hunt on aboriginal lands. Without the resources to live off the land, the Kootenai People would have to leave their country or become extinct. 
+                            Because of that border and the epidemic which killed so many tribal members, the Kootenai
+                            Nation was reduced to seven communities - five in Canada and two in the U.S. No matter how
+                            hard they struggled, the Kootenais kept losing their land. From the beginning of time, the
+                            Kootenais had respected each other and everything in His creation. Strange diseases came,
+                            killing tribal members. First smallpoxm then measles, diptheria, tuberculosis, and alchohol.
+                            Then the State of Idaho revoked tribal rights to fish and hunt on aboriginal lands. Without
+                            the resources to live off the land, the Kootenai People would have to leave their country or
+                            become extinct.
                         </p>
                     </div>
-                    <div id="col-2">
+                    <div>
                         <p>
-                            In the 1930's, the Government granted tribal allotments; few in the tribe ever received an allotment. In 1960, the Government awared the Kootenais $425,000 for loss of Aboriginal Territory, but the money came with strings attached and the struggle to survive in their homeland went on. On September 20, 1974, following years of hardship and loss of their Aboriginal Lands, the 67 remaining Kootenais declared war on the United States. Although it was a peaceful warm the publicity got the bureaucrats' attention and the Kootenais were finally deeded 12.5 acres. Things  began to go better for the tribe. 
+                            In the 1930's, the Government granted tribal allotments; few in the tribe ever received an
+                            allotment. In 1960, the Government awared the Kootenais $425,000 for loss of Aboriginal
+                            Territory, but the money came with strings attached and the struggle to survive in their
+                            homeland went on. On September 20, 1974, following years of hardship and loss of their
+                            Aboriginal Lands, the 67 remaining Kootenais declared war on the United States. Although it
+                            was a peaceful warm the publicity got the bureaucrats' attention and the Kootenais were
+                            finally deeded 12.5 acres. Things began to go better for the tribe.
                         </p>
                         <p>
-                            On December 1, 1986, the first major step in the Kootenai's economic development came into being with the Kootenai River Inn. The Inn is wholly and proudly owned by the Kootenai Tribe of Idaho.
+                            On December 1, 1986, the first major step in the Kootenai's economic development came into
+                            being with the Kootenai River Inn. The Inn is wholly and proudly owned by the Kootenai Tribe
+                            of Idaho.
                         </p>
                         <p>
-                            During all those terrible years, the Kootenai People never lost sight of their original purpose - to guard the land gifted by the Creator forever. They continue to work towards that purpose. 
+                            During all those terrible years, the Kootenai People never lost sight of their original
+                            purpose - to guard the land gifted by the Creator forever. They continue to work towards
+                            that purpose.
                         </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <div id="footer">
         <div id="footer-content-wrapper">
             <div id="footer-content">
@@ -136,11 +174,11 @@
                 </div>
                 <div id="contact">
                     <p>(208) 267-3519</p>
-                    <p>email address</p>
+                    <p>council@kootenai.org</p>
                 </div>
             </div>
         </div>
     </div>
-</body>
 
+</body>
 </html>

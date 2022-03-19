@@ -17,9 +17,9 @@
 
 <body>
     <div id="header">
-        <div id="header-content-wrapper">
-            <div id="logo-container">
-                <div id="logo"></div>
+        <div id="header-wrapper">
+            <div id="logo">
+                <img id="photo" src="icons/logo_80x100.png" alt="logo" width="80" height="100">
                 <div id="title">
                     <h1>Kootenai Tribe</h1>
                     <h2>of Idaho</h2>
@@ -32,73 +32,94 @@
                 <a href="fish.html">Fish & Wildlife</a>
                 <a href="enterprise.html">Enterprise</a>
                 <a href="contact.html">Contact</a>
-                <button id="menu" onclick="showMenu()"></button>
+                <button id="menu">
+                    <div id="dropdown">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="gov.html">Government</a>
+                        <a href="fish.html">Fish & Wildlife</a>
+                        <a href="enterprise.html">Enterprise</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </button>
             </div>
         </div>
     </div>
-    <div id="dropdown">
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="gov.html">Government</a>
-        <a href="fish.html">Fish & Wildlife</a>
-        <a href="enterprise.html">Enterprise</a>
-        <a href="contact.html">Contact</a>
-    </div>
-    <div class="banner_sidepage">
-        <div class="banner_sidepage-content-wrapper" id="banner_sidepage-government">
+
+    <div class="banner-sidepage" id="banner-sidepage_gov">
+        <div class="title-sidepage">
             <h1>Government</h1>
         </div>
     </div>
+
     <div id="main_gov">
-        <div id="main_gov-content-wrapper">
+        <div id="main_gov-wrapper">
+
             <div id="council">
-                <div id="heading">
+                <div class="heading">
                     <h2>Tribal Council</h2>
                 </div>
-                <div id="photo"></div>
-                <div id="info">
-                    <p>
-                        (Left to Right): Duane E. Saunders, Jennifer Porter, Amethyst Aitken,
-                    </p>
-                    <p>
-                        Gary Aitken, Jr., Kym Cooper, Louie Abraham, Velma Bahe, Ron Abraham
-                    </p>
+                <div class="container">
+                    <img class="photo" src="images/photos/council.jpeg" alt="tribal_council" width="800">
+                    <div class="info">
+                        <p>(Left to Right): Duane E. Saunders, Jennifer Porter, Amethyst Aitken,</p>
+                        <p>Gary Aitken, Jr., Kym Cooper, Louie Abraham, Velma Bahe, Ron Abraham</p>
+                    </div>
                 </div>
             </div>
+
             <div id="acctfin">
-                <div id="heading">
+                <div class="heading">
                     <h2>Accounting & Finance</h2>
                 </div>
-                <div id="info">
+                <div class="info">
                     <p>
-                        The Finance and Administration offices oversees various Tribal affairs, ranging from financial services and working with the Gaming Commission to economic development, housing, transportation, Indian Child Welfare, Tribal Employment Rights, Tribal Court and community liaison efforts. These offices work closely with the Tribal Council to promote economic development for Tribal enterprices.
+                        The Finance and Administration offices oversees various Tribal affairs, ranging from financial
+                        services and working with the Gaming Commission to economic development, housing,
+                        transportation, Indian Child Welfare, Tribal Employment Rights, Tribal Court and community
+                        liaison efforts. These offices work closely with the Tribal Council to promote economic
+                        development for Tribal enterprices.
                     </p>
                     <p>
-                        The Administrative Director also serves as coordinator for the Kootenai Valley Resource Initiative, in partnership with the City of Bonners Ferry and Boundary County. This cooperative local effort seeks to restore the social, cultural, economic and natural resource bases in the community, as well as provide a forum to address natual reosurces, wildlife, wetland conservation and water quality issues.
+                        The Administrative Director also serves as coordinator for the Kootenai Valley Resource
+                        Initiative, in partnership with the City of Bonners Ferry and Boundary County. This cooperative
+                        local effort seeks to restore the social, cultural, economic and natural resource bases in the
+                        community, as well as provide a forum to address natual reosurces, wildlife, wetland
+                        conservation and water quality issues.
                     </p>
                 </div>
             </div>
+
             <div id="leglaw">
-                <div id="heading">
+                <div class="heading">
                     <h2>Legal</h2>
                 </div>
-                <div id="info">
-                    <div id="col-1">
+                <div class="info">
+                    <div>
                         <p>
-                            The Legal Department provides legal advice and services to the Council, Departments and Enterprise to honor the Covenant by protecting Tribal sovereignty and Treaty right, promoting Tribal self-determination and self-governance.
-                            The Department, directed by the Attorney General, reports directly to the Tribal Council and works closely with other Departments and Enterprises to assist in achieving the Tribe's goals.
+                            The Legal Department provides legal advice and services to the Council, Departments and
+                            Enterprise to honor the Covenant by protecting Tribal sovereignty and Treaty right,
+                            promoting Tribal self-determination and self-governance.
+                            The Department, directed by the Attorney General, reports directly to the Tribal Council and
+                            works closely with other Departments and Enterprises to assist in achieving the Tribe's
+                            goals.
                         </p>
                     </div>
-                    <div id="col-2">
+                    <div>
                         <p>
-                            The Department coordinates with other governments in Ktunaxa Territory and surrounding areas, including other Ktunaxa governments, sister Indigenous Nations, Federal governments of the United States and Canada, and State and Provincal governments to promote Ktunaxa values and strengthen intergovernmnetal relations.
-                            The Legal Department acts as the Kootenai Tribe of Idaho Law and Order Code (Kootenai Code) Reviser. 
+                            The Department coordinates with other governments in Ktunaxa Territory and surrounding
+                            areas, including other Ktunaxa governments, sister Indigenous Nations, Federal governments
+                            of the United States and Canada, and State and Provincal governments to promote Ktunaxa
+                            values and strengthen intergovernmnetal relations.
+                            The Legal Department acts as the Kootenai Tribe of Idaho Law and Order Code (Kootenai Code)
+                            Reviser.
                         </P>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <div id="footer">
         <div id="footer-content-wrapper">
             <div id="footer-content">
@@ -109,11 +130,11 @@
                 </div>
                 <div id="contact">
                     <p>(208) 267-3519</p>
-                    <p>email address</p>
+                    <p>council@kootenai.org</p>
                 </div>
             </div>
         </div>
     </div>
-</body>
 
+</body>
 </html>

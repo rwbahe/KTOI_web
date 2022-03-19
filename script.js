@@ -1,4 +1,5 @@
 // dropdown menu logic
+
 function showMenu() {
     let menu = document.getElementById("menu");
     let dropdown = document.getElementById("dropdown");
@@ -40,3 +41,8 @@ function changeToGreeting() {
     elemCovenant.style.transition = "opacity 1s";
     elemCovenant.style.opacity = "0";
 }
+
+
+
+
+document.getElementById("menu").addEventListener("click", showMenu);
