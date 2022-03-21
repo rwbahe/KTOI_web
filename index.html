@@ -9,9 +9,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <script src="scripts/script.js"></script>
     <title>Kootenai Tribe of Idaho</title>
 </head>
+
+<script>
+    $(document).ready(function() {
+        $("#banner-greeting").delay(2000).fadeOut();
+        $("#banner-covenant").delay(2000).fadeIn();
+    });
+</script>
 
 <body>
     <div id="header">
@@ -32,7 +40,7 @@
                 <a href="contact.html">Contact</a>
                 <button id="menu">
                     <div id="dropdown">
-                        <a href="index.html">Home</a>
+                        <a id="first" href="index.html">Home</a>
                         <a href="about.html">About Us</a>
                         <a href="gov.html">Government</a>
                         <a href="fish.html">Fish & Wildlife</a>
@@ -49,22 +57,16 @@
             <h1>Kysuk Kyikyut!</h1>
             <h2>(Welcome!)</h2>
         </div>
-        <!--
-            <div id="banner-covenant">
-                <p id="cov-1">
-                    "I have created you Kootenai People to look
-                </p>
-                <p id="cov-2">
-                    after this beautiful land, to honor and guard
-                </p>
-                <p id="cov-3">
-                    and celebrate my Creation here in this place..."
-                </p>
-                <p id="cov-auth">
-                    - the Creator's Covenant
-                </p>
-            </div>
-        -->
+        <div id="banner-covenant">
+            <p id="cov-quote">
+                "I have created you Kootenai People to look
+                after this beautiful land, to honor and guard
+                and celebrate my Creation here in this place..."
+            </p>
+            <p id="cov-auth">
+                - the Creator's Covenant
+            </p>
+        </div>
     </div>
 
     <div id="main">
@@ -142,8 +144,8 @@
                             </p>
                             <a href="enterprise.html">Learn More</a>
                         </div>
-                        <img id="photo-1" src="images/photos/40590.jpg" alt="kootenai_river_inn_spa" width="640"
-                            height="480">
+                        <img id="photo-1" src="images/photos/inn_entrance.jpg" alt="kootenai_river_inn_spa" width="600"
+                            height="400">
                     </div>
 
                     <div class="item">
@@ -156,8 +158,8 @@
                             </p>
                             <a href="fish.html">Learn More</a>
                         </div>
-                        <img id="photo-2" src="/images/photos/landscape_1.JPG" alt="wildlife_landscape" width="640"
-                            height="480">
+                        <img id="photo-2" src="/images/photos/landscape_1.JPG" alt="wildlife_landscape" width="600"
+                            height="400">
                     </div>
                 </div>
 
@@ -170,7 +172,7 @@
         <div id="footer-content-wrapper">
             <div id="footer-content">
                 <div id="address">
-                    <p>142 Co Rd 38A</p>
+                    <p>100 Circle Drive</p>
                     <p>Bonners Ferry, ID, 83805</p>
                     <p>&#169 2022 Kootenai Tribe of Idaho</p>
                 </div>
