@@ -1,3 +1,4 @@
+/* UNIVERSAL */
 * {
     padding: 0;
     margin: 0;
@@ -66,13 +67,12 @@ button {
     color: #eee;
 }
 
-/* HOMEPAGE +parent_design */
-
-/* HEADER */
-
 body {
     margin: 0 auto;
+    max-width: 1920px;
 }
+
+/* HEADER */
 
 #header {
     position: fixed;
@@ -240,7 +240,6 @@ body {
     justify-content: center;
 }
 
-
 /* MAIN */
 
 #main {
@@ -305,7 +304,7 @@ body {
     background-color: #8a1818;
 }
 
-.pntr {
+#flyer .pntr {
     width: 32px;
     height: 32px;
     background-image: url(images/pntr_32x32.png);
@@ -313,16 +312,12 @@ body {
     background-position: center;
 }
 
-
-/*
-#flyer-container > div > a:hover {
+#flyer a:hover {
     transition: 0.5s;
-    cursor: pointer;
     width: 110px;
     background-color: #D37921;
     border: solid 1px rgba(30, 30, 30, 0.5);
 }
-*/
 
 /* MAIN -current */
 
@@ -369,18 +364,12 @@ body {
     height: 400px;
 }
 
-
-/*
-#current-container #col-1 a:hover {
+#current a:hover {
     transition: 0.5s;
-    cursor: pointer;
     width: 110px;
     background-color: #8a1818;
     border: solid 1px rgba(30, 30, 30, 0.5);
 }
-*/
-
-
 
 /* sidepages */
 
@@ -403,11 +392,7 @@ body {
     color: #eee;
 }
 
-
-
-
-
-/* sidepage - aboutUs*/
+/* sidepage -about */
 
 #banner-sidepage_about {
     background-image: url(images/banner-sidepage-aboutUs_1920x500.jpg);
@@ -417,7 +402,7 @@ body {
 #main_about {
     width: 100%;
     height: 1400px;
-    background-image: url(images/background_main-sidepage_1920x2000.jpg);
+    background-image: url(images/background_main-sidepage_1920x3200.jpg);
     background-repeat: no-repeat;
 }
 
@@ -464,7 +449,7 @@ body {
     margin-bottom: 32px;
 }
 
-/* sidepage - gov */
+/* sidepage -gov */
 
 #banner-sidepage_gov {
     background-image: url(images/banner-sidepage-government_1920x500.jpg);
@@ -473,8 +458,8 @@ body {
 
 #main_gov {
     width: 100%;
-    height: 1480px;
-    background-image: url(images/background_main-sidepage_1920x2000.jpg);
+    height: 1520px;
+    background-image: url(images/background_main-sidepage_1920x3200.jpg);
     background-repeat: no-repeat;
 }
 
@@ -482,7 +467,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 1140px;
-    height: 1480px;
+    height: 1520px;
     margin: 0 auto;
     gap: 48px;
 }
@@ -500,7 +485,7 @@ body {
 
 #council .photo {
     width: 1140px;
-    height: 600px;
+    height: auto;
 }
 
 #council .info {
@@ -521,11 +506,11 @@ body {
     grid-gap: 32px;
 }
 
-
-/* sidepage - fish */
+/* sidepage -fish */
 
 #banner-sidepage_fish {
     background-image: url(images/banner-sidepage-fish_1920x500.jpg);
+    background-position: center;
 }
 
 #main_fish {
@@ -575,17 +560,17 @@ body {
     gap: 32px;
 }
 
-
-/* sidepage - enteprise */
+/* sidepage -enteprise */
 
 #banner-sidepage_enterprise {
     background-image: url(images/banner-sidepage-enterprise_1920x500.jpg);
+    background-position: center;
 }
 
 #main_enterprise {
     width: 100%;
     height: 1360px;
-    background-image: url(images/background_main-sidepage_1920x2000.jpg);
+    background-image: url(images/background_main-sidepage_1920x3200.jpg);
     background-repeat: no-repeat;
 }
 
@@ -619,16 +604,17 @@ body {
     margin-top: 64px;
 }
 
-/* sidepage - contact */
+/* sidepage -contact */
 
 #banner-sidepage_contact {
     background-image: url(images/banner-sidepage-contact_1920x500.jpg);
+    background-position: center;
 }
 
 #main_contact {
     width: 100%;
     height: 600px;
-    background-image: url(images/background_main-sidepage_1920x2000.jpg);
+    background-image: url(images/background_main-sidepage_1920x3200.jpg);
     background-repeat: no-repeat;
 }
 
@@ -662,8 +648,6 @@ body {
     gap: 16px;
 }
 
-
-
 /* FOOTER */
 
 #footer {
@@ -672,7 +656,7 @@ body {
     background-color: #1e1e1e;
 }
 
-#footer-content-wrapper {
+#footer-wrapper {
     max-width: 1920px;
     height: 160px;
     margin: 0 auto;
@@ -681,7 +665,7 @@ body {
     background-position: center;
 }
 
-#footer-content {
+#footer .content {
     width: 100%;
     height: 160px;
     max-width: 1140px;
@@ -692,10 +676,1029 @@ body {
     align-items: center;
 }
 
-#footer-content p {
+#footer .content p {
     color: #ac5600;
 }
 
-#footer-content a {
-    color: #eee
+@media screen and (max-width: 1536px) {
+    #banner-covenant p {
+        font-size: 2.6rem;
+    }
+    
+    #main_about {
+        background-image: url(images/background_main-sidepage_1536x3200.jpg);
+    }
+
+    #main_gov {
+        background-image: url(images/background_main-sidepage_1536x3200.jpg);
+    }
+
+    #main_fish {
+        background-image: url(images/background_main-sidepage_1536x3200.jpg);
+    }
+
+    #main_enterprise {
+        background-image: url(images/background_main-sidepage_1536x3200.jpg);
+    }
+
+    #main_contact {
+        background-image: url(images/background_main-sidepage_1536x3200.jpg);
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    #banner-covenant p {
+        font-size: 2.4rem;
+    }
+
+    #main_about {
+        background-image: url(images/background_main-sidepage_1440x3200.jpg);
+    }
+
+    #main_gov {
+        background-image: url(images/background_main-sidepage_1440x3200.jpg);
+    }
+
+    #main_fish {
+        background-image: url(images/background_main-sidepage_1440x3200.jpg);
+    }
+
+    #main_enterprise {
+        background-image: url(images/background_main-sidepage_1440x3200.jpg);
+    }
+
+    #main_contact {
+        background-image: url(images/background_main-sidepage_1440x3200.jpg);
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    #banner-covenant p {
+        font-size: 2.3rem;
+    }
+
+    #main_about {
+        background-image: url(images/background_main-sidepage_1366x3200.jpg);
+    }
+
+    #main_gov {
+        background-image: url(images/background_main-sidepage_1366x3200.jpg);
+    }
+
+    #main_fish {
+        background-image: url(images/background_main-sidepage_1366x3200.jpg);
+    }
+
+    #main_enterprise {
+        background-image: url(images/background_main-sidepage_1366x3200.jpg);
+    }
+
+    #main_contact {
+        background-image: url(images/background_main-sidepage_1366x3200.jpg);
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    #banner-covenant p {
+        font-size: 2.1rem;
+    }
+
+    #main_about {
+        background-image: url(images/background_main-sidepage_1280x3200.jpg);
+    }
+
+    #main_gov {
+        background-image: url(images/background_main-sidepage_1280x3200.jpg);
+    }
+
+    #main_fish {
+        background-image: url(images/background_main-sidepage_1280x3200.jpg);
+    }
+
+    #main_enterprise {
+        background-image: url(images/background_main-sidepage_1280x3200.jpg);
+    }
+
+    #main_contact {
+        background-image: url(images/background_main-sidepage_1280x3200.jpg);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    /* UNIVERSAL */ 
+    h1 {
+        font-size: 3.rem;
+    }
+    
+    h2 {
+        font-size: 2.6rem;
+    }
+    
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+    
+    h5 {
+        font-size: 0.9rem;
+    }
+    
+    h6 {
+        font-size: 0.8rem;
+    }
+
+    body {
+        max-width: 1024px;
+    }
+
+    /* HEADER */
+    #header {
+        max-width: 1024px;
+    }
+
+    #logo #title h1 {
+        font-size: 2rem;
+    }
+
+    #logo #title h2 {
+        font-size: 1.6rem;
+    }
+
+    #navbar {
+        width: 25%;
+    }
+
+    #navbar > a {
+        display: none;
+    }
+
+    #dropdown {
+        width: 100%;
+    }
+
+    /* BANNER */
+    #banner-greeting h1 {
+        font-size: 4.6rem;
+    }
+    
+    #banner-greeting h2 {
+        font-size: 3rem;
+    }
+
+    #banner-covenant {
+        width: 75%;
+    }
+
+    /* MAIN */
+    #main {
+        height: 2320px;
+        max-width: 1024px;
+        background-image: url(images/background_main_1024x2320.jpg);
+    }
+
+    #main-wrapper {
+        width: 920px;
+    }
+
+    /* MAIN -intro */
+    #intro {
+        padding-top: 64px;
+    }
+
+    #intro p {
+        font-size: 1.4rem;
+        margin: 0 40px 16px 40px;
+    }
+
+    /* MAIN -flyer */
+    #flyer {
+        margin-top: 128px;
+    }
+
+    #flyer .pntr {
+        width: 32px;
+        height: 32px;
+        background-size: 24px 24px;
+    }
+
+    /* MAIN -current */ 
+    #current {
+        padding: 32px;
+        margin-top: 196px;
+    }
+    
+    #current .container {
+        gap: 96px;
+    }
+
+    #current #photo-1 {
+        width: 360px;
+        height: auto;
+    }
+    
+    #current #photo-2 {
+        width: 360px;
+        height: auto;
+    }
+
+    /* sidepages */
+    .banner-sidepage {
+        height: 460px;
+        max-width: 1024px;
+    }
+
+    /* sidepage -about */
+    #banner-sidepage_about {
+        background-image: url(images/banner-sidepage-aboutUs_1024x500.jpg);
+    }
+
+    #main_about {
+        height: 1560px;
+        background-image: url(images/background_main-sidepage_1024x3200.jpg);
+    }
+
+    #main_about-wrapper {
+        width: 920px;
+    }
+
+    #elders .container {
+        padding: 48px 32px;
+    }
+
+    #elders .photo {
+        width: 128px;
+        height: auto;
+    }
+
+    /* sidepage -gov */
+    #banner-sidepage_gov {
+        background-image: url(images/banner-sidepage-government_1024x500.jpg);
+    }
+
+    #main_gov {
+        height: 1520px;
+        background-image: url(images/background_main-sidepage_1024x3200.jpg);
+    }
+
+    #main_gov-wrapper {
+        width: 920px;
+    }
+
+    #council .photo {
+        width: 920px;
+    }
+
+    /* sidepage -fish */
+    #banner-sidepage_fish {
+        background-image: url(images/banner-sidepage-fish_1024x500.jpg);
+    }
+
+    #main_fish {
+        height: 3160px;
+        background-image: url(images/background_main-sidepage_1024x3200.jpg);
+    }
+
+    #main_fish-wrapper {
+        width: 920px;
+    }
+
+    #gallery .photo {
+        width: 443px;
+        height: auto;
+    }
+
+    #gallery #landscape {
+        width: 100%;
+        height: auto;
+    }
+
+    /* sidepage -enteprise */
+    #banner-sidepage_enterprise {
+        background-image: url(images/banner-sidepage-enterprise_1024x500.jpg);
+    }
+
+    #main_enterprise {
+        height: 1380px;
+        background-image: url(images/background_main-sidepage_1024x3200.jpg);
+    }
+
+    #main_enterprise-wrapper {
+        width: 920px;
+    }
+
+    #inn .photo {
+        width: auto;
+        height: 400px;
+    }
+
+    #resort .photo {
+        width: auto;
+        height: 400px;
+    }
+    
+    /* sidepage -contact */
+    #banner-sidepage_contact {
+        background-image: url(images/banner-sidepage-contact_1024x500.jpg);
+    }
+
+    #main_contact {
+        height: 600px;
+        background-image: url(images/background_main-sidepage_1024x3200.jpg);
+    }
+
+    #main_contact-wrapper {
+        width: 920px;
+    }
+
+    /* FOOTER */
+    #footer-wrapper {
+        max-width: 1024px;
+    }
+
+    #footer .content {
+        max-width: 920px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        max-width: 768px;
+    }
+
+    /* HEADER */
+    #header {
+        max-width: 768px;
+    }
+
+    /* BANNER */
+    #banner-greeting h1 {
+        font-size: 3.8rem;
+    }
+    
+    #banner-greeting h2 {
+        font-size: 2.6rem;
+    }
+
+    #banner-covenant {
+        width: 80%;
+    }
+
+    #banner-covenant p {
+        font-size: 1.7rem;
+    }
+
+    /* MAIN */
+    #main {
+        height: 3120px;
+        max-width: 768px;
+        background-image: url(images/background_main_768x3120.jpg);
+    }
+
+    #main-wrapper {
+        width: 680px;
+    }
+
+    #intro p {
+        margin: 0 48px 16px 48px;
+    }
+
+    /* MAIN -current */
+    #current .item {
+        flex-direction: column;
+    }
+
+    #current #photo-1 {
+        width: 540px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    #current #photo-2 {
+        width: 540px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    /* sidepages */
+    .banner-sidepage {
+        max-width: 768px;
+    }
+
+    /* sidepage -about */
+    #main_about {
+        height: 1800px;
+        background-image: url(images/background_main-sidepage_768x3200.jpg);
+    }
+
+    #main_about-wrapper {
+        width: 680px;
+    }
+
+    #elders .container {
+        padding: 48px 4px;
+    }
+
+    #history .info {
+        display: block;
+    }
+
+    /* sidepage -gov */
+    #main_gov {
+        height: 1580px;
+        background-image: url(images/background_main-sidepage_768x3200.jpg);
+    }
+
+    #main_gov-wrapper {
+        width: 680px;
+    }
+
+    #council .photo {
+        width: 680px;
+    }
+
+    #acctfin .info {
+        display: block;
+    }
+
+    #acctfin .info  p{
+        margin-bottom: 24px;
+    }
+
+    #leglaw .info {
+        display: block;
+    }
+    
+    #leglaw .info p {
+        margin-bottom: 24px;
+    }
+
+    /* sidepage -fish */
+    #main_fish {
+        height: 3280px;
+        background-image: url(images/background_main-sidepage_768x3200.jpg);
+    }
+
+    #main_fish-wrapper {
+        width: 680px;
+    }
+
+    #history_fish .info {
+        display: block;
+    }
+
+    #history_fish .info p {
+        margin-bottom: 24px;
+    }
+
+    #projects .container {
+        display: block;
+    }
+
+    #projects .item {
+        gap: 16px;
+        margin-bottom: 48px;
+    }
+
+    #gallery .photo {
+        width: 324px;
+        height: auto;
+    }
+
+    #gallery #landscape {
+        width: 100%;
+        height: auto;
+    }
+
+    /* sidepage -enteprise */
+    #main_enterprise {
+        height: 1920px;
+        background-image: url(images/background_main-sidepage_768x3200.jpg);
+    }
+
+    #main_enterprise-wrapper {
+        width: 680px;
+    }
+
+    #main_enterprise .content {
+        flex-direction: column;
+    }
+
+    #inn .photo {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #resort .photo {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /* sidepage -contact */
+    #main_contact {
+        height: 600px;
+        background-image: url(images/background_main-sidepage_768x3200.jpg);
+    }
+
+    #main_contact-wrapper {
+        width: 680px;
+    }
+
+    /* FOOTER */
+    #footer-wrapper {
+        max-width: 768px
+    }
+
+    #footer .content {
+        max-width: 680px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    /* UNIVERSAL */ 
+    h1 {
+        font-size: 3rem;
+    }
+    
+    h2 {
+        font-size: 2.4rem;
+    }
+    
+    h3 {
+        font-size: 1.4rem;
+    }
+    
+    h4 {
+        font-size: 1.2rem;
+    }
+    
+    h5 {
+        font-size: 1rem;
+    }
+    
+    h6 {
+        font-size: 0.8rem;
+    }
+
+    .heading {
+        margin-bottom: 24px;
+    }
+
+    body {
+        max-width: 420px;
+    }
+
+    /* HEADER */
+    #header {
+        max-width: 420px;
+    }
+
+    #logo #title {
+        margin-left: 16px;
+    }
+
+    #logo #title h1 {
+        font-size: 1.6rem;
+    }
+
+    #logo #title h2 {
+        font-size: 1.4rem;
+    }
+
+    #navbar {
+        width: 25%;
+    }
+
+    #navbar > a {
+        display: none;
+    }
+
+    #dropdown {
+        width: 100%;
+    }
+
+    /* BANNER */
+    #banner {
+        max-width: 420px;
+    }
+
+    #banner-greeting {
+        max-width: 420px;
+        width: 50%;
+    }
+
+    #banner-greeting h1 {
+        font-size: 2.8rem;
+    }
+    
+    #banner-greeting h2 {
+        font-size: 2.4rem;
+    }
+
+    #banner-covenant {
+        max-width: 420px;
+        width: 80%;
+    }
+
+    #banner-covenant p {
+        font-size: 1.4rem;
+        font-weight: 700;
+        line-height: 2.8rem;
+    }
+
+    /* MAIN */
+    #main {
+        height: 3280px;
+        max-width: 420px;
+        background-image: url(images/background_main_420x3280.jpg);
+    }
+
+    #main-wrapper {
+        width: 360px;
+    }
+
+    /* MAIN -intro */
+    #intro {
+        padding-top: 32px;
+    }
+
+    #intro p {
+        font-size: 1.4rem;
+        margin: 0 32px 16px 32px;
+    }
+
+    /* MAIN -flyer */
+    #flyer {
+        margin-top: 64px;
+    }
+
+    #flyer .pntr {
+        width: 32px;
+        height: 32px;
+        background-size: 24px 24px;
+    }
+
+    /* MAIN -current */ 
+    #current {
+        padding: 32px;
+        margin-top: 164px;
+    }
+
+    #current .container {
+        gap: 64px;
+    }
+
+    #current .item {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    #current #photo-1 {
+        width: 296px;
+        height: auto;
+    }
+    
+    #current #photo-2 {
+        width: 296px;
+        height: auto;
+    }
+
+    /* sidepages */
+    .banner-sidepage {
+        height: 420px;
+        max-width: 420px;
+    }
+
+    /* sidepage -about */
+    #main_about {
+        height: 3120px;
+        background-image: url(images/background_main-sidepage_420x5160.jpg);
+    }
+
+    #main_about-wrapper {
+        width: 360px;
+    }
+
+    #elders {
+        margin-top: 48px;
+    }
+
+    #elders .container {
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 24px 8px;
+    }
+
+    #elders .item {
+        padding: 16px 8px;
+    }
+
+    #elders .photo {
+        width: 128px;
+        height: auto;
+    }
+
+    #history .info {
+        display: block;
+    }
+    
+    /* sidepage -gov */
+    #main_gov {
+        height: 1940px;
+        background-image: url(images/background_main-sidepage_420x5160.jpg);
+    }
+
+    #main_gov-wrapper {
+        width: 360px;
+    }
+
+    #council {
+        margin-top: 48px;
+    }
+
+    #council .photo {
+        width: 360px;
+
+    }
+
+    #council .info p {
+        font-size: 0.8rem;
+    }
+
+    #acctfin .info {
+        display: block;
+    }
+
+    #acctfin .info p {
+        margin-bottom: 24px;
+    }
+
+    #leglaw .info {
+        display: block;
+    }
+
+    #leglaw .info p {
+        margin-bottom: 24px;
+    }
+
+    /* sidepage -fish */
+    #main_fish {
+        height: 5160px;
+        background-image: url(images/background_main-sidepage_420x5160.jpg);
+    }
+
+    #main_fish-wrapper {
+        width: 360px;
+    }
+
+    #history_fish {
+        margin-top: 48px;
+    }
+
+    #history_fish .info {
+        display: block;
+    }
+
+    #history_fish .info p {
+        margin-bottom: 24px;
+    }
+
+    #projects .container {
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+    }
+
+    #projects .item {
+        gap: 16px;
+    }
+
+    #gallery .container {
+        flex-direction: column;
+    }
+
+    #gallery .photo {
+        width: 100%;
+        height: auto;
+    }
+
+    /* sidepage -enteprise */
+    #main_enterprise {
+        height: 2300px;
+        background-image: url(images/background_main-sidepage_420x5160.jpg);
+    }
+
+    #main_enterprise-wrapper {
+        width: 360px;
+    }
+
+    #main_enterprise .content {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    #inn {
+        margin-top: 48px;
+    }
+
+    #inn .photo {
+        width: 100%;
+        height: auto;
+    }
+
+    #resort .photo {
+        width: 100%;
+        height: auto;
+    }
+
+    /* sidepage -contact */
+    #main_contact {
+        height: 600px;
+        background-image: url(images/background_main-sidepage_420x5160.jpg);
+    }
+
+    #main_contact-wrapper {
+        width: 360px;
+    }
+
+    #general {
+        margin-top: 48px;
+    }
+
+    /* FOOTER */
+    #footer-wrapper {
+        max-width: 420px;
+    }
+
+    #footer .content {
+        flex-direction: column;
+        max-width: 360px;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    #footer #contact {
+        order: 1;
+    }
+
+    #footer #address {
+        order: 2;
+    }
+    
+}
+
+@media screen and (max-width: 380px) {
+    /* UNIVERSAL */ 
+    h1 {
+        font-size: 2.6rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+
+    body {
+        max-width: 380px;
+    }
+
+    /* HEADER */
+    #header {
+        max-width: 380px;
+    }
+
+    #logo #title h1 {
+        font-size: 1.4rem;
+    }
+
+    #logo #title h2 {
+        font-size: 1.2rem;
+    }
+
+    #navbar {
+        width: 20%;
+    }
+
+    /* BANNER */
+    #banner {
+        max-width: 380px;
+    }
+
+    #banner-greeting {
+        max-width: 380px;
+    }
+
+    #banner-covenant {
+        max-width: 380px;
+    }
+
+    /* MAIN */
+    #main {
+        height: 3480px;
+        max-width: 380px;
+    }
+
+    #main-wrapper {
+        width: 320px;
+    }
+
+    /* MAIN -intro */
+    #intro p {
+        margin: 0 24px 16px 24px;
+    }
+
+    /* MAIN -flyer */
+    #flyer .pntr {
+        background-size: 16px 16px;
+    }
+
+    /* MAIN -current */ 
+    #current #photo-1 {
+        width: 256px;
+    }
+    
+    #current #photo-2 {
+        width: 256px;
+    }
+
+    /* sidepages */
+    .banner-sidepage {
+        height: 380px;
+        max-width: 380px;
+    }
+
+    /* sidepage -about */
+    #main_about {
+        height: 3360px;
+    }
+
+    #main_about-wrapper {
+        width: 320px;
+    }
+
+    #elders .container {
+        padding: 24px 4px;
+    }
+    
+    /* sidepage -gov */
+    #main_gov {
+        height: 2020px;
+    }
+
+    #main_gov-wrapper {
+        width: 320px;
+    }
+
+    #council .photo {
+        width: 320px;
+    }
+
+    #council .info p {
+        font-size: 0.7rem;
+    }
+
+    /* sidepage -fish */
+    #main_fish {
+        height: 5280px;
+    }
+
+    #main_fish-wrapper {
+        width: 320px;
+    }
+
+    #projects .container {
+        gap: 48px;
+    }
+
+    #projects .item {
+        gap: 12px;
+    }
+
+    /* sidepage -enteprise */
+    #main_enterprise {
+        height: 2300px;
+    }
+
+    #main_enterprise-wrapper {
+        width: 320px;
+    }
+
+    /* sidepage -contact */
+    #main_contact {
+        height: 540px;
+    }
+
+    #main_contact-wrapper {
+        width: 320px;
+    }
+
+    /* FOOTER */
+    #footer-wrapper {
+        max-width: 380px;
+    }
+
+    #footer .content {
+        max-width: 320px;
+    }
 }
