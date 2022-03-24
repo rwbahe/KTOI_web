@@ -1050,10 +1050,15 @@ body {
 
     /* HEADER */
     #header {
+        position: sticky;
         max-width: 900px;
     }
 
     /* BANNER */
+    #banner {
+        margin-top: -144px;
+    }
+
     #banner-greeting h1 {
         font-size: 3.6rem;
     }
@@ -1076,6 +1081,7 @@ body {
     .banner-sidepage {
         height: 460px;
         max-width: 900px;
+        margin-top: -144px;
     }
 
     /* sidepage -about */
