@@ -1050,15 +1050,11 @@ body {
 
     /* HEADER */
     #header {
-        position: sticky;
+        position: fixed;
         max-width: 900px;
     }
 
     /* BANNER */
-    #banner {
-        margin-top: -144px;
-    }
-
     #banner-greeting h1 {
         font-size: 3.6rem;
     }
@@ -1081,7 +1077,6 @@ body {
     .banner-sidepage {
         height: 460px;
         max-width: 900px;
-        margin-top: -144px;
     }
 
     /* sidepage -about */
@@ -1844,5 +1839,19 @@ body {
 
     #footer .content {
         max-width: 320px;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    #header {
+        position: relative;
+    }
+
+    #banner {
+        margin-top: -144px;
+    }
+
+    .banner-sidepage {
+        margin-top: -144px;
     }
 }
