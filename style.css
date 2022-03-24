@@ -1468,7 +1468,7 @@ body {
     #projects .container {
         display: flex;
         flex-direction: column;
-        gap: 64px;
+        gap: 4px;
     }
 
     #projects .item {
