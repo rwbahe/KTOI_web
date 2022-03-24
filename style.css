@@ -680,6 +680,16 @@ body {
     color: #ac5600;
 }
 
+#footer .content a {
+    color: #ac5600;
+    text-decoration: underline;
+}
+
+#footer #contact {
+    display: flex;
+    flex-direction: column;
+}
+
 @media screen and (max-width: 1536px) {
     #banner-covenant p {
         font-size: 2.6rem;
@@ -787,7 +797,7 @@ body {
 @media screen and (max-width: 1024px) {
     /* UNIVERSAL */ 
     h1 {
-        font-size: 3.rem;
+        font-size: 3rem;
     }
     
     h2 {
@@ -1020,6 +1030,111 @@ body {
 
     #footer .content {
         max-width: 920px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    /* UNIVERSAL */ 
+    body {
+        max-width: 900px;
+    }
+
+    /* HEADER */
+    #header {
+        max-width: 900px;
+    }
+
+    /* BANNER */
+    #banner-greeting h1 {
+        font-size: 3.6rem;
+    }
+    
+    #banner-greeting h2 {
+        font-size: 2.8rem;
+    }
+
+    /* MAIN */
+    #main {
+        max-width: 900px;
+        background-image: url(images/background_main_900x2320.jpg);
+    }
+
+    #main-wrapper {
+        width: 800px;
+    }
+
+    /* sidepages */
+    .banner-sidepage {
+        height: 460px;
+        max-width: 900px;
+    }
+
+    /* sidepage -about */
+    #main_about {
+        height: 1600px;
+        background-image: url(images/background_main-sidepage_900x3200.jpg);
+    }
+
+    #main_about-wrapper {
+        width: 800px;
+    }
+
+    /* sidepage -gov */
+    #main_gov {
+        height: 1520px;
+        background-image: url(images/background_main-sidepage_900x3200.jpg);
+    }
+
+    #main_gov-wrapper {
+        width: 800px;
+    }
+
+    #council .photo {
+        width: 800px;
+    }
+
+    /* sidepage -fish */
+    #main_fish {
+        height: 3160px;
+        background-image: url(images/background_main-sidepage_900x3200.jpg);
+    }
+
+    #main_fish-wrapper {
+        width: 800px;
+    }
+
+    #gallery .photo {
+        width: 384px;
+        height: auto;
+    }
+
+    /* sidepage -enteprise */
+    #main_enterprise {
+        height: 1580px;
+        background-image: url(images/background_main-sidepage_900x3200.jpg);
+    }
+
+    #main_enterprise-wrapper {
+        width: 800px;
+    }
+    
+    /* sidepage -contact */
+    #main_contact {
+        height: 600px;
+        background-image: url(images/background_main-sidepage_900x3200.jpg);
+    }
+
+    #main_contact-wrapper {
+        width: 800px;
+    }
+
+    /* FOOTER */
+    #footer-wrapper {
+        max-width: 900px;
+    }
+
+    #footer .content {
+        max-width: 800px;
     }
 }
 
