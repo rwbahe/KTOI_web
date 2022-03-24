@@ -648,6 +648,15 @@ body {
     gap: 16px;
 }
 
+#general .contact {
+    display: flex;
+    flex-direction: column;
+}
+
+#general .contact a {
+    text-decoration: underline;
+}
+
 /* FOOTER */
 
 #footer {
