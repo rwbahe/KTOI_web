@@ -143,7 +143,7 @@ body {
     height: 48px;
     margin-left: 32px;
     background-color: rgba(0, 0, 0, 0);
-    background-image: url(icons/menu_36x36.svg);
+    background-image: url(icons/menu-bar_36x36.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 32px 32px;
@@ -1286,7 +1286,7 @@ body {
 
     #banner-greeting {
         max-width: 420px;
-        width: 50%;
+        width: 80%;
     }
 
     #banner-greeting h1 {
@@ -1294,7 +1294,7 @@ body {
     }
     
     #banner-greeting h2 {
-        font-size: 2.4rem;
+        font-size: 2.2rem;
     }
 
     #banner-covenant {
@@ -1589,6 +1589,14 @@ body {
         max-width: 380px;
     }
 
+    #banner-greeting h1 {
+        font-size: 2.4rem;
+    }
+    
+    #banner-greeting h2 {
+        font-size: 1.8rem;
+    }
+
     #banner-covenant {
         max-width: 380px;
     }
@@ -1597,6 +1605,7 @@ body {
     #main {
         height: 3480px;
         max-width: 380px;
+        background-image: url(images/background_main_380x3480.jpg);
     }
 
     #main-wrapper {
@@ -1631,6 +1640,7 @@ body {
     /* sidepage -about */
     #main_about {
         height: 3360px;
+        background-image: url(images/background_main-sidepage_380x5380.jpg);
     }
 
     #main_about-wrapper {
@@ -1644,6 +1654,7 @@ body {
     /* sidepage -gov */
     #main_gov {
         height: 2020px;
+        background-image: url(images/background_main-sidepage_380x5380.jpg);
     }
 
     #main_gov-wrapper {
@@ -1660,7 +1671,8 @@ body {
 
     /* sidepage -fish */
     #main_fish {
-        height: 5280px;
+        height: 5380px;
+        background-image: url(images/background_main-sidepage_380x5380.jpg);
     }
 
     #main_fish-wrapper {
@@ -1668,7 +1680,7 @@ body {
     }
 
     #projects .container {
-        gap: 48px;
+        gap: 8px;
     }
 
     #projects .item {
@@ -1678,6 +1690,7 @@ body {
     /* sidepage -enteprise */
     #main_enterprise {
         height: 2300px;
+        background-image: url(images/background_main-sidepage_380x5380.jpg);
     }
 
     #main_enterprise-wrapper {
@@ -1687,6 +1700,7 @@ body {
     /* sidepage -contact */
     #main_contact {
         height: 540px;
+        background-image: url(images/background_main-sidepage_380x5380.jpg);
     }
 
     #main_contact-wrapper {
