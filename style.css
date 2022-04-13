@@ -614,6 +614,7 @@ body {
 #main_contact {
     width: 100%;
     height: 600px;
+    min-height: 64vh;
     background-image: url(images/background_main-sidepage_1920x3200.jpg);
     background-repeat: no-repeat;
 }
@@ -803,7 +804,7 @@ body {
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1080px) {
     /* UNIVERSAL */ 
     h1 {
         font-size: 3rem;
@@ -818,7 +819,7 @@ body {
     }
 
     h4 {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
     
     h5 {
@@ -830,16 +831,16 @@ body {
     }
 
     body {
-        max-width: 1024px;
+        max-width: 1080px;
     }
 
     /* HEADER */
     #header {
-        max-width: 1024px;
+        max-width: 1080px;
     }
 
     #logo #title h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     #logo #title h2 {
@@ -860,7 +861,7 @@ body {
 
     /* BANNER */
     #banner-greeting h1 {
-        font-size: 4.6rem;
+        font-size: 4.2rem;
     }
     
     #banner-greeting h2 {
@@ -868,14 +869,14 @@ body {
     }
 
     #banner-covenant {
-        width: 75%;
+        width: 70%;
     }
 
     /* MAIN */
     #main {
         height: 2320px;
-        max-width: 1024px;
-        background-image: url(images/background_main_1024x2320.jpg);
+        max-width: 1080px;
+        background-image: url(images/background_main_1080x2320.jpg);
     }
 
     #main-wrapper {
@@ -914,19 +915,18 @@ body {
     }
 
     #current #photo-1 {
-        width: 360px;
+        width: 480px;
         height: auto;
     }
     
     #current #photo-2 {
-        width: 360px;
+        width: 480px;
         height: auto;
     }
 
     /* sidepages */
     .banner-sidepage {
-        height: 460px;
-        max-width: 1024px;
+        max-width: 1080px;
     }
 
     /* sidepage -about */
@@ -936,7 +936,7 @@ body {
 
     #main_about {
         height: 1560px;
-        background-image: url(images/background_main-sidepage_1024x3200.jpg);
+        background-image: url(images/background_main-sidepage_1080x3200.jpg);
     }
 
     #main_about-wrapper {
@@ -944,11 +944,11 @@ body {
     }
 
     #elders .container {
-        padding: 48px 32px;
+        padding: 64px 32px;
     }
 
     #elders .photo {
-        width: 128px;
+        width: 148px;
         height: auto;
     }
 
@@ -959,7 +959,7 @@ body {
 
     #main_gov {
         height: 1520px;
-        background-image: url(images/background_main-sidepage_1024x3200.jpg);
+        background-image: url(images/background_main-sidepage_1080x3200.jpg);
     }
 
     #main_gov-wrapper {
@@ -977,7 +977,7 @@ body {
 
     #main_fish {
         height: 3160px;
-        background-image: url(images/background_main-sidepage_1024x3200.jpg);
+        background-image: url(images/background_main-sidepage_1080x3200.jpg);
     }
 
     #main_fish-wrapper {
@@ -1001,7 +1001,7 @@ body {
 
     #main_enterprise {
         height: 1380px;
-        background-image: url(images/background_main-sidepage_1024x3200.jpg);
+        background-image: url(images/background_main-sidepage_1080x3200.jpg);
     }
 
     #main_enterprise-wrapper {
@@ -1017,7 +1017,7 @@ body {
         width: auto;
         height: 400px;
     }
-    
+
     /* sidepage -contact */
     #banner-sidepage_contact {
         background-image: url(images/banner-sidepage-contact_1024x500.jpg);
@@ -1025,7 +1025,7 @@ body {
 
     #main_contact {
         height: 600px;
-        background-image: url(images/background_main-sidepage_1024x3200.jpg);
+        background-image: url(images/background_main-sidepage_1080x3200.jpg);
     }
 
     #main_contact-wrapper {
@@ -1034,11 +1034,91 @@ body {
 
     /* FOOTER */
     #footer-wrapper {
-        max-width: 1024px;
+        max-width: 1080px;
     }
 
     #footer .content {
         max-width: 920px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    /* UNIVERSAL */ 
+    body {
+        max-width: 1024px;
+    }
+
+    /* HEADER */
+    #header {
+        max-width: 1024px;
+    }
+
+    /* BANNER */
+    #banner-covenant {
+        width: 75%;
+    }
+
+    /* MAIN */
+    #main {
+        max-width: 1024px;
+        background-image: url(images/background_main_1024x2320.jpg);
+    }
+
+    /* MAIN -current */
+    #current #photo-1 {
+        width: 360px;
+        height: auto;
+    }
+    
+    #current #photo-2 {
+        width: 360px;
+        height: auto;
+    }
+
+    /* sidepages */
+    .banner-sidepage {
+        height: 460px;
+        max-width: 1024px;
+    }
+
+    /* sidepage -about */
+    #main_about {
+        background-image: url(images/background_main-sidepage_1024x3200.jpg);
+    }
+
+    #elders .container {
+        padding: 48px 32px;
+    }
+
+    #elders .photo {
+        width: 128px;
+        height: auto;
+    }
+
+    /* sidepage -gov */
+    #main_gov {
+        background-image: url(images/background_main-sidepage_1024x3200.jpg);
+    }
+
+    /* sidepage -fish */
+    #main_fish {
+        background-image: url(images/background_main-sidepage_1024x3200.jpg);
+    }
+
+    /* sidepage -enteprise */
+    #main_enterprise {
+        background-image: url(images/background_main-sidepage_1024x3200.jpg);
+    }
+
+    
+    /* sidepage -contact */
+    #main_contact {
+        background-image: url(images/background_main-sidepage_1024x3200.jpg);
+    }
+
+    /* FOOTER */
+    #footer-wrapper {
+        max-width: 1024px;
     }
 }
 
