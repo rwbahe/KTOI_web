@@ -392,6 +392,10 @@ body {
     color: #eee;
 }
 
+.sidepage {
+    background-image: url(images/background_main-sidepage_1920x3200.jpg);
+}
+
 /* sidepage -about */
 
 #banner-sidepage_about {
@@ -402,7 +406,6 @@ body {
 #main_about {
     width: 100%;
     height: 1400px;
-    background-image: url(images/background_main-sidepage_1920x3200.jpg);
     background-repeat: no-repeat;
 }
 
@@ -458,8 +461,7 @@ body {
 
 #main_gov {
     width: 100%;
-    height: 1520px;
-    background-image: url(images/background_main-sidepage_1920x3200.jpg);
+    height: 1560px;
     background-repeat: no-repeat;
 }
 
@@ -515,8 +517,7 @@ body {
 
 #main_fish {
     width: 100%;
-    height: 3160px;
-    background-image: url(images/background_main-sidepage_1920x3200.jpg);
+    height: 3120px;
     background-repeat: no-repeat;
 }
 
@@ -549,7 +550,7 @@ body {
 #projects .item {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 16px;
 }
 
 #gallery .container {
@@ -569,8 +570,7 @@ body {
 
 #main_enterprise {
     width: 100%;
-    height: 1360px;
-    background-image: url(images/background_main-sidepage_1920x3200.jpg);
+    height: 1340px;
     background-repeat: no-repeat;
 }
 
@@ -580,7 +580,7 @@ body {
     width: 1140px;
     height: 1360px;
     margin: 0 auto;
-    gap: 64px;
+    gap: 48px;
 }
 
 #main_enterprise a {
@@ -614,7 +614,6 @@ body {
 #main_contact {
     width: 100%;
     min-height: 100vh;
-    background-image: url(images/background_main-sidepage_1920x3200.jpg);
     background-repeat: no-repeat;
 }
 
@@ -702,25 +701,9 @@ body {
 @media screen and (max-width: 1536px) {
     #banner-covenant p {
         font-size: 2.6rem;
-    }
+    }  
     
-    #main_about {
-        background-image: url(images/background_main-sidepage_1536x3200.jpg);
-    }
-
-    #main_gov {
-        background-image: url(images/background_main-sidepage_1536x3200.jpg);
-    }
-
-    #main_fish {
-        background-image: url(images/background_main-sidepage_1536x3200.jpg);
-    }
-
-    #main_enterprise {
-        background-image: url(images/background_main-sidepage_1536x3200.jpg);
-    }
-
-    #main_contact {
+    .sidepage {
         background-image: url(images/background_main-sidepage_1536x3200.jpg);
     }
 }
@@ -730,23 +713,7 @@ body {
         font-size: 2.4rem;
     }
 
-    #main_about {
-        background-image: url(images/background_main-sidepage_1440x3200.jpg);
-    }
-
-    #main_gov {
-        background-image: url(images/background_main-sidepage_1440x3200.jpg);
-    }
-
-    #main_fish {
-        background-image: url(images/background_main-sidepage_1440x3200.jpg);
-    }
-
-    #main_enterprise {
-        background-image: url(images/background_main-sidepage_1440x3200.jpg);
-    }
-
-    #main_contact {
+    .sidepage {
         background-image: url(images/background_main-sidepage_1440x3200.jpg);
     }
 }
@@ -755,24 +722,8 @@ body {
     #banner-covenant p {
         font-size: 2.3rem;
     }
-
-    #main_about {
-        background-image: url(images/background_main-sidepage_1366x3200.jpg);
-    }
-
-    #main_gov {
-        background-image: url(images/background_main-sidepage_1366x3200.jpg);
-    }
-
-    #main_fish {
-        background-image: url(images/background_main-sidepage_1366x3200.jpg);
-    }
-
-    #main_enterprise {
-        background-image: url(images/background_main-sidepage_1366x3200.jpg);
-    }
-
-    #main_contact {
+    
+    .sidepage {
         background-image: url(images/background_main-sidepage_1366x3200.jpg);
     }
 }
@@ -782,23 +733,7 @@ body {
         font-size: 2.1rem;
     }
 
-    #main_about {
-        background-image: url(images/background_main-sidepage_1280x3200.jpg);
-    }
-
-    #main_gov {
-        background-image: url(images/background_main-sidepage_1280x3200.jpg);
-    }
-
-    #main_fish {
-        background-image: url(images/background_main-sidepage_1280x3200.jpg);
-    }
-
-    #main_enterprise {
-        background-image: url(images/background_main-sidepage_1280x3200.jpg);
-    }
-
-    #main_contact {
+    .sidepage {
         background-image: url(images/background_main-sidepage_1280x3200.jpg);
     }
 }
@@ -928,6 +863,10 @@ body {
         max-width: 1080px;
     }
 
+    .sidepage {
+        background-image: url(images/background_main-sidepage_1080x3200.jpg);
+    }
+
     /* sidepage -about */
     #banner-sidepage_about {
         background-image: url(images/banner-sidepage-aboutUs_1024x500.jpg);
@@ -935,7 +874,6 @@ body {
 
     #main_about {
         height: 1560px;
-        background-image: url(images/background_main-sidepage_1080x3200.jpg);
     }
 
     #main_about-wrapper {
@@ -958,7 +896,6 @@ body {
 
     #main_gov {
         height: 1520px;
-        background-image: url(images/background_main-sidepage_1080x3200.jpg);
     }
 
     #main_gov-wrapper {
@@ -975,8 +912,7 @@ body {
     }
 
     #main_fish {
-        height: 3160px;
-        background-image: url(images/background_main-sidepage_1080x3200.jpg);
+        height: 3040px;
     }
 
     #main_fish-wrapper {
@@ -999,8 +935,7 @@ body {
     }
 
     #main_enterprise {
-        height: 1380px;
-        background-image: url(images/background_main-sidepage_1080x3200.jpg);
+        height: 1360px;
     }
 
     #main_enterprise-wrapper {
@@ -1020,10 +955,6 @@ body {
     /* sidepage -contact */
     #banner-sidepage_contact {
         background-image: url(images/banner-sidepage-contact_1024x500.jpg);
-    }
-
-    #main_contact {
-        background-image: url(images/background_main-sidepage_1080x3200.jpg);
     }
 
     #main_contact-wrapper {
@@ -1079,9 +1010,13 @@ body {
         max-width: 1024px;
     }
 
+    .sidepage {
+        background-image: url(images/background_main-sidepage_1024x3200.jpg);
+    }
+
     /* sidepage -about */
     #main_about {
-        background-image: url(images/background_main-sidepage_1024x3200.jpg);
+        height: 1520px;
     }
 
     #elders .container {
@@ -1091,26 +1026,6 @@ body {
     #elders .photo {
         width: 128px;
         height: auto;
-    }
-
-    /* sidepage -gov */
-    #main_gov {
-        background-image: url(images/background_main-sidepage_1024x3200.jpg);
-    }
-
-    /* sidepage -fish */
-    #main_fish {
-        background-image: url(images/background_main-sidepage_1024x3200.jpg);
-    }
-
-    /* sidepage -enteprise */
-    #main_enterprise {
-        background-image: url(images/background_main-sidepage_1024x3200.jpg);
-    }
-
-    /* sidepage -contact */
-    #main_contact {
-        background-image: url(images/background_main-sidepage_1024x3200.jpg);
     }
 
     /* FOOTER */
@@ -1140,6 +1055,10 @@ body {
         font-size: 2.8rem;
     }
 
+    #banner-covenant {
+        width: 70%;
+    }
+
     /* MAIN */
     #main {
         max-width: 900px;
@@ -1156,10 +1075,13 @@ body {
         max-width: 900px;
     }
 
+    .sidepage {
+        background-image: url(images/background_main-sidepage_900x3200.jpg);
+    }
+
     /* sidepage -about */
     #main_about {
         height: 1600px;
-        background-image: url(images/background_main-sidepage_900x3200.jpg);
     }
 
     #main_about-wrapper {
@@ -1169,7 +1091,6 @@ body {
     /* sidepage -gov */
     #main_gov {
         height: 1520px;
-        background-image: url(images/background_main-sidepage_900x3200.jpg);
     }
 
     #main_gov-wrapper {
@@ -1183,7 +1104,6 @@ body {
     /* sidepage -fish */
     #main_fish {
         height: 3160px;
-        background-image: url(images/background_main-sidepage_900x3200.jpg);
     }
 
     #main_fish-wrapper {
@@ -1198,7 +1118,6 @@ body {
     /* sidepage -enteprise */
     #main_enterprise {
         height: 1580px;
-        background-image: url(images/background_main-sidepage_900x3200.jpg);
     }
 
     #main_enterprise-wrapper {
@@ -1208,7 +1127,6 @@ body {
     /* sidepage -contact */
     #main_contact {
         height: 600px;
-        background-image: url(images/background_main-sidepage_900x3200.jpg);
     }
 
     #main_contact-wrapper {
@@ -1289,10 +1207,13 @@ body {
         max-width: 768px;
     }
 
+    .sidepage {
+        background-image: url(images/background_main-sidepage_768x3280.jpg);
+    }
+
     /* sidepage -about */
     #main_about {
         height: 1800px;
-        background-image: url(images/background_main-sidepage_768x3200.jpg);
     }
 
     #main_about-wrapper {
@@ -1310,7 +1231,6 @@ body {
     /* sidepage -gov */
     #main_gov {
         height: 1580px;
-        background-image: url(images/background_main-sidepage_768x3200.jpg);
     }
 
     #main_gov-wrapper {
@@ -1340,7 +1260,6 @@ body {
     /* sidepage -fish */
     #main_fish {
         height: 3280px;
-        background-image: url(images/background_main-sidepage_768x3200.jpg);
     }
 
     #main_fish-wrapper {
@@ -1377,7 +1296,6 @@ body {
     /* sidepage -enteprise */
     #main_enterprise {
         height: 1920px;
-        background-image: url(images/background_main-sidepage_768x3200.jpg);
     }
 
     #main_enterprise-wrapper {
@@ -1401,7 +1319,6 @@ body {
     /* sidepage -contact */
     #main_contact {
         height: 600px;
-        background-image: url(images/background_main-sidepage_768x3200.jpg);
     }
 
     #main_contact-wrapper {
@@ -1573,10 +1490,13 @@ body {
         max-width: 420px;
     }
 
+    .sidepage {
+        background-image: url(images/background_main-sidepage_420x5160.jpg);
+    }
+
     /* sidepage -about */
     #main_about {
         height: 3120px;
-        background-image: url(images/background_main-sidepage_420x5160.jpg);
     }
 
     #main_about-wrapper {
@@ -1609,7 +1529,6 @@ body {
     /* sidepage -gov */
     #main_gov {
         height: 1940px;
-        background-image: url(images/background_main-sidepage_420x5160.jpg);
     }
 
     #main_gov-wrapper {
@@ -1648,7 +1567,6 @@ body {
     /* sidepage -fish */
     #main_fish {
         height: 5160px;
-        background-image: url(images/background_main-sidepage_420x5160.jpg);
     }
 
     #main_fish-wrapper {
@@ -1689,7 +1607,6 @@ body {
     /* sidepage -enteprise */
     #main_enterprise {
         height: 2300px;
-        background-image: url(images/background_main-sidepage_420x5160.jpg);
     }
 
     #main_enterprise-wrapper {
@@ -1718,7 +1635,6 @@ body {
     /* sidepage -contact */
     #main_contact {
         height: 600px;
-        background-image: url(images/background_main-sidepage_420x5160.jpg);
     }
 
     #main_contact-wrapper {
@@ -1843,10 +1759,13 @@ body {
         max-width: 380px;
     }
 
+    .sidepage {
+        background-image: url(images/background_main-sidepage_380x5380.jpg);
+    }
+
     /* sidepage -about */
     #main_about {
         height: 3360px;
-        background-image: url(images/background_main-sidepage_380x5380.jpg);
     }
 
     #main_about-wrapper {
@@ -1860,7 +1779,6 @@ body {
     /* sidepage -gov */
     #main_gov {
         height: 2020px;
-        background-image: url(images/background_main-sidepage_380x5380.jpg);
     }
 
     #main_gov-wrapper {
@@ -1878,7 +1796,6 @@ body {
     /* sidepage -fish */
     #main_fish {
         height: 5380px;
-        background-image: url(images/background_main-sidepage_380x5380.jpg);
     }
 
     #main_fish-wrapper {
@@ -1896,7 +1813,6 @@ body {
     /* sidepage -enteprise */
     #main_enterprise {
         height: 2300px;
-        background-image: url(images/background_main-sidepage_380x5380.jpg);
     }
 
     #main_enterprise-wrapper {
@@ -1906,7 +1822,6 @@ body {
     /* sidepage -contact */
     #main_contact {
         height: 540px;
-        background-image: url(images/background_main-sidepage_380x5380.jpg);
     }
 
     #main_contact-wrapper {
